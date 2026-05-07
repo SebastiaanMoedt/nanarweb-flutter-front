@@ -1,9 +1,10 @@
 import 'Film.dart';
 
 class Cycle {
+  int id;
   String name;
   String description;
   List<Film> films;
 
-  Cycle(this.name, this.description, this.films);
+  Cycle(this.id, this.name, this.description, this.films);
 }
