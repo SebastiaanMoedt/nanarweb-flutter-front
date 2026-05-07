@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../class/Cycle.dart';
-import '../partials/nanar_appbar.dart';
-import '../partials/nanar_bottomnavbar.dart';
+import '../partials/NanarAppBar.dart';
+import '../partials/NanarBottomNavBar.dart';
 
 class CycleDetail extends StatelessWidget {
   final Cycle cycle;

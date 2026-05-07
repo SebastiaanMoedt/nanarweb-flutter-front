@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:nanarweb_front/pages/cycle_detail.dart';
-import 'package:nanarweb_front/partials/nanar_appbar.dart';
-import 'package:nanarweb_front/partials/nanar_bottomnavbar.dart';
+import 'package:nanarweb_front/pages/CycleDetail.dart';
+import 'package:nanarweb_front/partials/NanarAppBar.dart';
+import 'package:nanarweb_front/partials/NanarBottomNavBar.dart';
 
 import 'class/Cycle.dart';
 import 'class/Film.dart';
