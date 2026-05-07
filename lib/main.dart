@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:nanarweb_front/pages/cycle_detail.dart';
+import 'package:nanarweb_front/partials/nanar_appbar.dart';
 import 'package:nanarweb_front/partials/nanar_bottomnavbar.dart';
 
 import 'class/Cycle.dart';
@@ -85,15 +86,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-        flexibleSpace: Image(
-          image: AssetImage('assets/House.jpg'),
-          fit: BoxFit.cover,
-        ),
-      ),
+      appBar: NanarAppbar(title: widget.title, actions: []),
       body: Container(
-        padding: const EdgeInsets.all(20),
+        padding: EdgeInsets.all(30),
         child: ListView.builder(
           itemCount: cycles.length,
           itemBuilder: (BuildContext context, int index) {

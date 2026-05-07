@@ -5,8 +5,7 @@ class NanarBottomNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
+    return BottomNavigationBar(
         backgroundColor: Colors.green,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
@@ -23,7 +22,6 @@ class NanarBottomNavBar extends StatelessWidget {
           ),
         ],
         selectedItemColor: Colors.pink[800],
-      ),
     );
   }
 }

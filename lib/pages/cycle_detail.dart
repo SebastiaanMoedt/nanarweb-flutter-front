@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../class/Cycle.dart';
+import '../partials/nanar_appbar.dart';
+import '../partials/nanar_bottomnavbar.dart';
 
 class CycleDetail extends StatelessWidget {
   final Cycle cycle;
@@ -9,12 +11,8 @@ class CycleDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('${cycle.name} - détails'),
-        flexibleSpace: Image(
-          image: AssetImage('assets/House.jpg'),
-          fit: BoxFit.cover,
-        ),
+      appBar: NanarAppbar(
+        title: '${cycle.name} - détails',
         actions: [IconButton(icon: Icon(Icons.edit), onPressed: () {})],
       ),
       body: Container(
@@ -28,13 +26,14 @@ class CycleDetail extends StatelessWidget {
               color: Theme.of(context).colorScheme.secondary,
               child: ListTile(
                 title: Text(cycle.films[index].title),
-                subtitle: Text(cycle.films[index].year as String),
+                subtitle: Text(cycle.films[index].year.toString()),
                 onTap: () {},
               ),
             );
           },
         ),
       ),
+      bottomNavigationBar: NanarBottomNavBar(),
     );
   }
 }
