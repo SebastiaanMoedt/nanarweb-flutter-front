@@ -1,0 +1,25 @@
+NANARWEB:
+-api call pour choper liste de cycles (ne pas charger tous les films, juste la liste des cycles)
+-mettre les cycles en cours tout en haut
+-ensuite ordre alphabetique
+	> infos sur card: titre cycle, description cycle
+> en cliquant sur une card, on va vers la page détail du cycle:
+	> liste de card avec les films du cycle
+		> chaque card:
+			> case pour cocher si le film a été vu dans ce cycle
+			> si film vu: case cochée et card grisée
+				> film vu sort de la liste "to watch" et va dans la liste "watched"
+			> année de sortie (ou special info) - titre du film - durée en minutes
+			> lien pour dl le film si on l'a, sinon "A TROUVER"
+				(mettre lien justwatch si projet présenté)
+			> peut etre lien vers le letterboxd
+	> selon liste, tri par date ou par "special info"
+		(option à renseigner pendant création du cycle)
+	> bouton "random film"
+		> affiche un film aléatoire de la liste en popup (memes détails que la card, et un bouton "non pas celui là")
+
+> ajout cycle:
+	> permettre upload de CSV
+	> et ajout manuel
+> ajout film
+	> ajout à un ou plusieurs cycles existants
