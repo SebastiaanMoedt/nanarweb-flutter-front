@@ -18,15 +18,15 @@ class CycleDetail extends StatelessWidget {
       body: Container(
         padding: const EdgeInsets.all(20),
         child: ListView.builder(
-          itemCount: cycle.films.length,
+          itemCount: cycle.filmsToWatch.length,
           itemBuilder: (BuildContext context, int index) {
             return Card(
               elevation: 25,
               shadowColor: Theme.of(context).colorScheme.tertiary,
               color: Theme.of(context).colorScheme.secondary,
               child: ListTile(
-                title: Text(cycle.films[index].title),
-                subtitle: Text(cycle.films[index].year.toString()),
+                title: Text(cycle.filmsToWatch[index].title),
+                subtitle: Text(cycle.filmsToWatch[index].year.toString()),
                 onTap: () {},
               ),
             );

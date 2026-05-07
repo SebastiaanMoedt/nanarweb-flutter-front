@@ -4,7 +4,14 @@ class Cycle {
   int id;
   String name;
   String description;
-  List<Film> films;
+  List<Film> filmsToWatch;
+  List<Film> filmsWatched;
 
-  Cycle(this.id, this.name, this.description, this.films);
+  Cycle({
+    required this.id,
+    required this.name,
+    required this.description,
+    required this.filmsToWatch,
+    required this.filmsWatched,
+  });
 }

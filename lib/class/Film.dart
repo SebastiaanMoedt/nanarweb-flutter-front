@@ -1,6 +1,7 @@
 class Film {
   String title;
   int year;
+  int length;
 
-  Film(this.title, this.year);
+  Film({required this.title, required this.year, required this.length});
 }

@@ -73,14 +73,20 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   List<Cycle> cycles = [
-    Cycle(1, 'VRROOOMMM', 'Des films de voiture', [
-      Film('Bullitt', 1968),
-      Film('Thelma & Louise', 1991),
-    ]),
-    Cycle(2, 'Cosmic Horror', 'Des films d\'horreur cosmique.', [
-      Film('The Beyond', 1981),
-      Film('Event Horizon', 1997),
-    ]),
+    Cycle(
+      id: 1,
+      name: 'VRROOOMMM',
+      description: 'Des films de voiture',
+      filmsToWatch: [Film(title: 'Thelma & Louise', year: 1991, length: 130)],
+      filmsWatched: [Film(title: 'Bullitt', year: 1968, length: 113)],
+    ),
+    Cycle(
+      id: 2,
+      name: 'Cosmic Horror',
+      description: 'Des films d\'horreur cosmique.',
+      filmsToWatch: [Film(title: 'The Beyond', year: 1981, length: 2000)],
+      filmsWatched: [Film(title: 'Event Horizon', year: 1997, length: 2000)],
+    ),
   ];
 
   @override
